@@ -5,10 +5,10 @@
 }
 
 :root {
-  --bg-color: #F5F5F5;
-  --text-color: #312A4E;
-  --accent-color: #FFAB6B;
-  --main-font: Raleway;
+  --bg-color: #f5f5f5;
+  --text-color: #312a4e;
+  --accent-color: #ffab6b;
+  --main-font: raleway;
   --accent-font: 'STIX Two Text';
 }
 
@@ -27,9 +27,9 @@ figure {
 .page {
   min-inline-size: 360px;
   margin: 0;
-  background-color: var(--bg-color, #F5F5F5);
+  background-color: var(--bg-color, #f5f5f5);
   font-family: var(--main-font, Raleway), Arial, Helvetica, sans-serif;
-  color: var(--text-color, #312A4E);
+  color: var(--text-color, #312a4e);
 }
 
 .header {
@@ -37,7 +37,7 @@ figure {
 }
 
 .heading {
-  font-family: var(--accent-font, #FFAB6B), 'Times New Roman', Times, serif;
+  font-family: var(--accent-font, #ffab6b), 'Times New Roman', Times, serif;
   line-height: 90%;
   text-align: center;
   font-weight: bold;
@@ -67,7 +67,6 @@ figure {
 
 .content__text-block .content__paragraph:not(:last-child) {
   padding-block-end: 1.5em;
-
 }
 
 .content__blockquote {
@@ -95,7 +94,7 @@ figure {
 }
 
 .content__paragraph.content__text-block_type_first-lettered::first-letter {
-  background-color: var(--accent-color, #FFAB6B);
+  background-color: var(--accent-color, #ffab6b);
   padding: 0 4px;
   margin-inline-end: 1px;
   font-weight: bold;
@@ -104,7 +103,7 @@ figure {
 
 .content__figure {
   margin: 7vi 0;
-  inline-size: max(calc(100% + 10vi));;
+  inline-size: max(calc(100% + 10vi));
   position: relative;
   inset-inline-end: 5vi;
 }
@@ -125,7 +124,7 @@ figure {
 .content__card {
   aspect-ratio: 4 / 3;
   margin-block-start: 7%;
-  border: 1px solid var(--text-color, #312A4E);
+  border: 1px solid var(--text-color, #312a4e);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -143,18 +142,13 @@ figure {
   content: '';
   position: absolute;
   inset: 31px 272px;
-  background-color: var(--accent-color, #FFAB6B);
+  background-color: var(--accent-color, #ffab6b);
   block-size: 0.3em;
   inline-size: 3.7em;
   z-index: -1;
-
-
 }
 
 .content__card-subtitle {
   font-size: 18px;
   text-align: center;
-
 }
-
-
