@@ -1,0 +1,160 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #F5F5F5;
+  --text-color: #312A4E;
+  --accent-color: #FFAB6B;
+  --main-font: Raleway;
+  --accent-font: 'STIX Two Text';
+}
+
+p,
+h1,
+h2,
+h3,
+blockquote,
+ul,
+ol,
+li,
+figure {
+  margin: 0;
+}
+
+.page {
+  min-inline-size: 360px;
+  margin: 0;
+  background-color: var(--bg-color, #F5F5F5);
+  font-family: var(--main-font, Raleway), Arial, Helvetica, sans-serif;
+  color: var(--text-color, #312A4E);
+}
+
+.header {
+  padding-block-start: 10vi;
+}
+
+.heading {
+  font-family: var(--accent-font, #FFAB6B), 'Times New Roman', Times, serif;
+  line-height: 90%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.content-section {
+  padding-inline: 5vw;
+}
+
+.header__title {
+  font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
+  padding-block-start: 40px;
+  font-weight: bold;
+}
+
+.content__title {
+  font-size: 30px;
+  padding-block: 7vi 2.5vi;
+}
+
+.content__text-block {
+  font-family: var(--main-font, Raleway), Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: start;
+}
+
+.content__text-block .content__paragraph:not(:last-child) {
+  padding-block-end: 1.5em;
+
+}
+
+.content__blockquote {
+  font-family: var(--main-font, Raleway), Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 200%;
+  inline-size: 75%;
+  padding-block-end: 1.5em;
+  margin-inline-start: 16vi;
+}
+
+.link {
+  color: inherit;
+}
+
+.content__list {
+  list-style: none;
+  padding-inline-start: 40px;
+  list-style-image: url(../images/marker-light.svg);
+}
+
+.content__list .content__list__item:not(:last-child) {
+  padding-block-end: 10px;
+}
+
+.content__paragraph.content__text-block_type_first-lettered::first-letter {
+  background-color: var(--accent-color, #FFAB6B);
+  padding: 0 4px;
+  margin-inline-end: 1px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.content__figure {
+  margin: 7vi 0;
+  inline-size: max(calc(100% + 10vi));;
+  position: relative;
+  inset-inline-end: 5vi;
+}
+
+.content__picture {
+  inline-size: 100%;
+  object-fit: cover;
+}
+
+.content__picture-caption {
+  text-align: center;
+  padding-block: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  border-block-end: 1px solid currentColor;
+}
+
+.content__card {
+  aspect-ratio: 4 / 3;
+  margin-block-start: 7%;
+  border: 1px solid var(--text-color, #312A4E);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-inline-size: 90%;
+}
+
+.content__card-title {
+  padding-inline: 10px;
+  font-size: 60px;
+  text-wrap: balance;
+  position: relative;
+}
+
+.colored-text::after {
+  content: '';
+  position: absolute;
+  inset: 31px 272px;
+  background-color: var(--accent-color, #FFAB6B);
+  block-size: 0.3em;
+  inline-size: 3.7em;
+  z-index: -1;
+
+
+}
+
+.content__card-subtitle {
+  font-size: 18px;
+  text-align: center;
+
+}
+
+
